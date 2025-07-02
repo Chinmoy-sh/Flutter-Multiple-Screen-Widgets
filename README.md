@@ -1,6 +1,6 @@
-# practice_app
+# Flutter App Screen
 
-A new Flutter project.
+A Flutter project.
 
 ## Getting Started
 
