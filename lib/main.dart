@@ -131,11 +131,20 @@ class _MyHomePageState extends State<MyHomePage> {
   void _showSnackbar(String message) {
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
-        content: Text(message),
+        elevation: 0,
+        backgroundColor: Colors.blue,
+        content: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Center(child: Text('Success!')),
+
+            Icon(Icons.check_circle_rounded, color: Colors.white),
+          ],
+        ),
         duration: const Duration(milliseconds: 900),
         behavior: SnackBarBehavior.floating,
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-        margin: const EdgeInsets.all(16),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(28)),
+        margin: const EdgeInsets.fromLTRB(570, 0, 570, 0),
       ),
     );
   }
@@ -190,7 +199,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   borderRadius: BorderRadius.circular(30),
                 ),
                 child: Text(
-                  'distinct background',
+                  'Distinct Background',
                   style: TextStyle(
                     color: Theme.of(context).colorScheme.onTertiaryContainer,
                   ),
@@ -210,7 +219,7 @@ class _MyHomePageState extends State<MyHomePage> {
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: const <Widget>[
               Icon(Icons.picture_as_pdf_rounded, size: 45, color: Colors.red),
-              Icon(Icons.facebook_rounded, size: 35, color: Colors.blue),
+              Icon(Icons.facebook_rounded, size: 45, color: Colors.blue),
               Icon(
                 Icons.bookmark_outline_rounded,
                 size: 40,
@@ -236,7 +245,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   style: ElevatedButton.styleFrom(
                     padding: const EdgeInsets.symmetric(vertical: 15),
                     shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10),
+                      borderRadius: BorderRadius.circular(25),
                     ),
                   ),
                   child: const Text(
@@ -250,7 +259,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 width: double.infinity,
                 child: ElevatedButton.icon(
                   onPressed: () => _showSnackbar('Add Item Clicked!'),
-                  icon: const Icon(Icons.add_circle_outline, size: 24),
+                  icon: const Icon(Icons.add_circle_outline, size: 23),
                   label: const Text(
                     'Add New Item',
                     style: TextStyle(fontSize: 18),
@@ -258,7 +267,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   style: ElevatedButton.styleFrom(
                     padding: const EdgeInsets.symmetric(vertical: 15),
                     shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10),
+                      borderRadius: BorderRadius.circular(25),
                     ),
                   ),
                 ),
@@ -271,7 +280,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   style: TextButton.styleFrom(
                     padding: const EdgeInsets.symmetric(vertical: 15),
                     shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10),
+                      borderRadius: BorderRadius.circular(25),
                     ),
                   ),
                   child: const Text(
@@ -285,7 +294,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 width: double.infinity,
                 child: TextButton.icon(
                   onPressed: () => _showSnackbar('Settings Opened!'),
-                  icon: const Icon(Icons.settings_outlined, size: 24),
+                  icon: const Icon(Icons.settings_outlined, size: 23),
                   label: const Text(
                     'App Settings',
                     style: TextStyle(fontSize: 18),
@@ -293,7 +302,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   style: TextButton.styleFrom(
                     padding: const EdgeInsets.symmetric(vertical: 15),
                     shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10),
+                      borderRadius: BorderRadius.circular(25),
                     ),
                   ),
                 ),
@@ -358,6 +367,9 @@ class _MyHomePageState extends State<MyHomePage> {
               ListTile(
                 title: const Text('Agree to Terms & Conditions:'),
                 trailing: Checkbox(
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadiusGeometry.circular(20),
+                  ),
                   value: _checkboxValue,
                   onChanged: (bool? newValue) {
                     setState(() {
@@ -365,7 +377,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       _showSnackbar('Terms Accepted: $_checkboxValue');
                     });
                   },
-                  activeColor: Colors.deepOrange,
+                  activeColor: Colors.blue,
                 ),
               ),
             ],
@@ -393,10 +405,10 @@ class _MyHomePageState extends State<MyHomePage> {
                 },
                 decoration: InputDecoration(
                   border: const OutlineInputBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(10)),
+                    borderRadius: BorderRadius.all(Radius.circular(20)),
                   ),
                   labelText: 'Your Full Name',
-                  hintText: 'e.g., Jane Doe',
+                  hintText: 'Enter your full name',
                   prefixIcon: const Icon(Icons.person_outline),
                   suffixIcon: _textFieldValue.isNotEmpty
                       ? IconButton(
@@ -464,7 +476,7 @@ class _MyHomePageState extends State<MyHomePage> {
         leading: IconButton(
           icon: const Icon(Icons.menu),
           tooltip: 'Try this widget',
-          onPressed: () => _showSnackbar('Success! You have done it.'),
+          onPressed: () => _showSnackbar('Success'),
         ),
         actions: [
           IconButton(
@@ -525,7 +537,7 @@ class _MyHomePageState extends State<MyHomePage> {
           child: FloatingActionButton(
             onPressed: () => _showSnackbar('Floating Action Button Pressed!'),
             tooltip: 'Add New',
-            backgroundColor: Theme.of(context).colorScheme.secondary,
+            backgroundColor: Colors.blue,
             foregroundColor: Colors.white,
             elevation: 8,
             child: const Icon(Icons.add),
@@ -615,14 +627,17 @@ class ProfilePage extends StatelessWidget {
               children: [
                 const CircleAvatar(
                   radius: 40,
-                  child: Icon(Icons.person, size: 40),
-                  backgroundColor: Colors.grey,
+                  child: Icon(Icons.person, size: 37),
+                  backgroundColor: Colors.blue,
                 ),
                 const SizedBox(height: 16),
-                Text('Jane Doe', style: Theme.of(context).textTheme.titleLarge),
+                Text(
+                  'Your Name',
+                  style: Theme.of(context).textTheme.titleLarge,
+                ),
                 const SizedBox(height: 8),
                 Text(
-                  'Flutter Enthusiast',
+                  'Description',
                   style: Theme.of(context).textTheme.bodyMedium,
                 ),
                 const SizedBox(height: 24),
@@ -666,7 +681,7 @@ class _SettingsPageState extends State<SettingsPage> {
             leading: const Icon(Icons.dark_mode),
             title: const Text('Dark Mode'),
             trailing: AnimatedSwitcher(
-              duration: const Duration(milliseconds: 300),
+              duration: const Duration(milliseconds: 100),
               transitionBuilder: (child, animation) =>
                   ScaleTransition(scale: animation, child: child),
               child: Switch(
@@ -681,7 +696,7 @@ class _SettingsPageState extends State<SettingsPage> {
                     ),
                   );
                 },
-                activeColor: Colors.deepPurple,
+                activeColor: Colors.blue,
               ),
             ),
           ),
@@ -738,14 +753,14 @@ class _GalleryPageState extends State<GalleryPage>
   late final AnimationController _controller;
   late final Animation<double> _animation;
   final List<Color> _colors = [
-    Colors.pink.shade200,
-    Colors.blue.shade200,
-    Colors.green.shade200,
-    Colors.orange.shade200,
-    Colors.purple.shade200,
-    Colors.teal.shade200,
-    Colors.amber.shade200,
-    Colors.red.shade200,
+    Colors.pink.shade500,
+    Colors.blue.shade500,
+    Colors.green.shade500,
+    Colors.orange.shade500,
+    Colors.purple.shade500,
+    Colors.teal.shade500,
+    Colors.amber.shade500,
+    Colors.red.shade500,
   ];
 
   @override
@@ -817,7 +832,7 @@ class AboutPage extends StatelessWidget {
           margin: const EdgeInsets.all(32),
           elevation: 6,
           shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(16),
+            borderRadius: BorderRadius.circular(18),
           ),
           child: Padding(
             padding: const EdgeInsets.all(24.0),
@@ -831,13 +846,17 @@ class AboutPage extends StatelessWidget {
                 ),
                 const SizedBox(height: 16),
                 Text(
-                  'This app demonstrates smooth navigation, animations, and modern Flutter UI widgets.',
+                  """
+                  This app demonstrates smooth navigation, animations and modern Flutter UI widgets.
+                Stay updated, Stay cool❤️.
+
+                  """,
                   style: Theme.of(context).textTheme.bodyLarge,
                   textAlign: TextAlign.center,
                 ),
                 const SizedBox(height: 16),
                 const Text(
-                  'Created with ❤️ using Flutter.',
+                  'This App is created using Flutter Framework.',
                   style: TextStyle(fontWeight: FontWeight.bold),
                 ),
               ],
