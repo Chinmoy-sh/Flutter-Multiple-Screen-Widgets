@@ -16,6 +16,24 @@ For help getting started with Flutter development, view the
 samples, guidance on mobile development, and a full API reference.
 
 There are multile pages written in simple but effective codes to build a real world project.
+This app includes some common widgets like:<br>
+Card<br>
+Container<br>
+Every kind of buttons<br>
+General and animated switch<br>
+Navigation system<br>
+Animation<br>
+Splash Screen<br>
+Activity progress animation<br>
+Appbar<br>
+Gradients<br>
+Texts(both stylish and general)<br>
+Gridview<br>
+List/Scrool view<br>
+
+And so many features in it you can find in the app.
+
+For more information, connect with us via the social media platforms and so on.
 
 
 Thank you.
