@@ -1,6 +1,6 @@
 # Flutter App Screen
 
-A Flutter project.
+## Contains every kind of modern and frequently used widgets in a single project...
 
 ## Getting Started...
 
@@ -31,8 +31,7 @@ Texts(both stylish and general)<br>
 Gridview<br>
 List/Scrool view<br>
 
-And so many features in it you can find in the app.
-
+And so many features in it you can find in the app.<br>
 For more information, connect with us via the social media platforms and so on.
 
 
