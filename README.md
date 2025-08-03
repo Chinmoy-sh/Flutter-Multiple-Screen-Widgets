@@ -32,7 +32,7 @@ Gridview<br>
 List/Scrool view<br>
 
 And so many features in it you can find in the app.<br>
-For more information, connect with us via the social media platforms and so on.
+## This project is created using the widely used Flutter Framework. For more information, connect with us via the social media platforms.
 
 
 Thank you.
