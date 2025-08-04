@@ -867,3 +867,12 @@ class AboutPage extends StatelessWidget {
     );
   }
 }
+
+
+// // Gallery Page with Animated Grid
+// class GalleryPage extends StatefulWidget {
+//   const GalleryPage({super.key});
+//   @override
+//   State<GalleryPage> createState() => _GalleryPageState();
+// }
+
