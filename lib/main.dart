@@ -948,3 +948,54 @@ class AboutPage extends StatelessWidget {
 //     );
 //   }
 // }
+
+
+
+
+// // About Page
+// class AboutPage extends StatelessWidget {
+//   const AboutPage({super.key});
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       appBar: AppBar(title: const Text('About'), centerTitle: true),
+//       body: Center(
+//         child: Card(
+//           margin: const EdgeInsets.all(32),
+//           elevation: 6,
+//           shape: RoundedRectangleBorder(
+//             borderRadius: BorderRadius.circular(18),
+//           ),
+//           child: Padding(
+//             padding: const EdgeInsets.all(24.0),
+//             child: Column(
+//               mainAxisSize: MainAxisSize.min,
+//               children: [
+//                 const Icon(
+//                   Icons.info_outline,
+//                   size: 60,
+//                   color: Colors.blueAccent,
+//                 ),
+//                 const SizedBox(height: 16),
+//                 Text(
+//                   """
+//                   This app demonstrates smooth navigation, animations and modern Flutter UI widgets.
+//                 Stay updated, Stay cool❤️.
+
+//                   """,
+//                   style: Theme.of(context).textTheme.bodyLarge,
+//                   textAlign: TextAlign.center,
+//                 ),
+//                 const SizedBox(height: 16),
+//                 const Text(
+//                   'This App is created using Flutter Framework.',
+//                   style: TextStyle(fontWeight: FontWeight.bold),
+//                 ),
+//               ],
+//             ),
+//           ),
+//         ),
+//       ),
+//     );
+//   }
+// }
