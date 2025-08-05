@@ -6,7 +6,6 @@ plugins {
 }
 
 
-
 android {
     namespace = "com.example.practice_app"
     compileSdk = flutter.compileSdkVersion
@@ -18,11 +17,9 @@ android {
     }
 
 
-
     kotlinOptions {
         jvmTarget = JavaVersion.VERSION_11.toString()
     }
-
 
 
     defaultConfig {
@@ -37,7 +34,6 @@ android {
     }
 
 
-
     buildTypes {
         release {
             // TODO: Add your own signing config for the release build.
@@ -46,7 +42,6 @@ android {
         }
     }
 }
-
 
 
 flutter {
