@@ -5,6 +5,8 @@ plugins {
     id("dev.flutter.flutter-gradle-plugin")
 }
 
+
+
 android {
     namespace = "com.example.practice_app"
     compileSdk = flutter.compileSdkVersion
@@ -15,9 +17,13 @@ android {
         targetCompatibility = JavaVersion.VERSION_11
     }
 
+
+
     kotlinOptions {
         jvmTarget = JavaVersion.VERSION_11.toString()
     }
+
+
 
     defaultConfig {
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
@@ -30,6 +36,8 @@ android {
         versionName = flutter.versionName
     }
 
+
+
     buildTypes {
         release {
             // TODO: Add your own signing config for the release build.
@@ -38,6 +46,8 @@ android {
         }
     }
 }
+
+
 
 flutter {
     source = "../.."
