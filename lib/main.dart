@@ -3,7 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
 import 'dart:async';
- 
+
 // Entry point of the app
 void main() {
   runApp(const MyApp());
