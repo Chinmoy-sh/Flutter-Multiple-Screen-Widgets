@@ -4,12 +4,15 @@ import 'package:flutter/material.dart';
 import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
 import 'dart:async';
 
+
 // Entry point of the app
 void main() {
   runApp(const MyApp());
 }
 
+
 // Main App Widget
+
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
   @override
@@ -43,12 +46,14 @@ class MyApp extends StatelessWidget {
   }
 }
 
+
 // --- SplashScreen Widget ---
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
   @override
   State<SplashScreen> createState() => _SplashScreenState();
 }
+
 
 class _SplashScreenState extends State<SplashScreen>
     with SingleTickerProviderStateMixin {
@@ -113,6 +118,8 @@ class _SplashScreenState extends State<SplashScreen>
     );
   }
 }
+
+
 
 // Home Page with all UI features and navigation
 class MyHomePage extends StatefulWidget {
@@ -548,6 +555,8 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 }
 
+
+
 // Helper for smooth page transitions
 Route _smoothRoute(Widget page) {
   return PageRouteBuilder(
@@ -606,6 +615,8 @@ class _AnimatedLogoState extends State<AnimatedLogo>
   }
 }
 
+
+
 // Profile Page
 class ProfilePage extends StatelessWidget {
   const ProfilePage({super.key});
@@ -658,6 +669,9 @@ class ProfilePage extends StatelessWidget {
     );
   }
 }
+
+
+
 
 // Settings Page with Animated Switches
 class SettingsPage extends StatefulWidget {
@@ -741,6 +755,8 @@ class _SettingsPageState extends State<SettingsPage> {
   }
 }
 
+
+
 // Gallery Page with Animated Grid
 class GalleryPage extends StatefulWidget {
   const GalleryPage({super.key});
@@ -820,6 +836,9 @@ class _GalleryPageState extends State<GalleryPage>
   }
 }
 
+
+
+
 // About Page
 class AboutPage extends StatelessWidget {
   const AboutPage({super.key});
@@ -867,6 +886,8 @@ class AboutPage extends StatelessWidget {
     );
   }
 }
+
+
 
 //  Start...
 // Gallery Page with Animated Grid
