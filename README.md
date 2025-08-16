@@ -21,7 +21,7 @@ Card<br>
 Container<br>
 Every kind of buttons<br>
 General and animated switch<br>
-Navigation system<br>
+Full smooth navigation system and routing<br>
 Animation<br>
 Splash Screen<br>
 Activity progress animation<br>
