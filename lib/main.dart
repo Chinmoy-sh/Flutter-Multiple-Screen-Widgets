@@ -891,132 +891,132 @@ class AboutPage extends StatelessWidget {
 
 // //  Start...
 // // Gallery Page with Animated Grid
-// class GalleryPage extends StatefulWidget {
-//   const GalleryPage({super.key});
-//   @override
-//   State<GalleryPage> createState() => _GalleryPageState();
-// }
+class GalleryPage extends StatefulWidget {
+  const GalleryPage({super.key});
+  @override
+  State<GalleryPage> createState() => _GalleryPageState();
+}
 
 
-// class _GalleryPageState extends State<GalleryPage>
-//     with SingleTickerProviderStateMixin {
-//   late final AnimationController _controller;
-//   late final Animation<double> _animation;
-//   final List<Color> _colors = [
-//     Colors.pink.shade500,
-//     Colors.blue.shade500,
-//     Colors.green.shade500,
-//     Colors.orange.shade500,
-//     Colors.purple.shade500,
-//     Colors.teal.shade500,
-//     Colors.amber.shade500,
-//     Colors.red.shade500,
-//   ];
+class _GalleryPageState extends State<GalleryPage>
+    with SingleTickerProviderStateMixin {
+  late final AnimationController _controller;
+  late final Animation<double> _animation;
+  final List<Color> _colors = [
+    Colors.pink.shade500,
+    Colors.blue.shade500,
+    Colors.green.shade500,
+    Colors.orange.shade500,
+    Colors.purple.shade500,
+    Colors.teal.shade500,
+    Colors.amber.shade500,
+    Colors.red.shade500,
+  ];
 
-//   @override
-//   void initState() {
-//     super.initState();
-//     _controller = AnimationController(
-//       duration: const Duration(milliseconds: 1200),
-//       vsync: this,
-//     )..forward();
-//     _animation = CurvedAnimation(parent: _controller, curve: Curves.easeInOut);
-//   }
+  @override
+  void initState() {
+    super.initState();
+    _controller = AnimationController(
+      duration: const Duration(milliseconds: 1200),
+      vsync: this,
+    )..forward();
+    _animation = CurvedAnimation(parent: _controller, curve: Curves.easeInOut);
+  }
 
-//   @override
-//   void dispose() {
-//     _controller.dispose();
-//     super.dispose();
-//   }
+  @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
+  }
 
-//   @override
-//   Widget build(BuildContext context) {
-//     return Scaffold(
-//       appBar: AppBar(title: const Text('Gallery'), centerTitle: true),
-//       body: FadeTransition(
-//         opacity: _animation,
-//         child: GridView.builder(
-//           padding: const EdgeInsets.all(20),
-//           itemCount: _colors.length,
-//           gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-//             crossAxisCount: 2,
-//             mainAxisSpacing: 20,
-//             crossAxisSpacing: 20,
-//           ),
-//           itemBuilder: (context, index) {
-//             return ScaleTransition(
-//               scale: _animation,
-//               child: Container(
-//                 decoration: BoxDecoration(
-//                   color: _colors[index],
-//                   borderRadius: BorderRadius.circular(18),
-//                   boxShadow: const [
-//                     BoxShadow(
-//                       color: Colors.black12,
-//                       blurRadius: 8,
-//                       offset: Offset(0, 4),
-//                     ),
-//                   ],
-//                 ),
-//                 child: const Center(
-//                   child: Icon(Icons.image, color: Colors.white, size: 48),
-//                 ),
-//               ),
-//             );
-//           },
-//         ),
-//       ),
-//     );
-//   }
-// }
-
-
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: const Text('Gallery'), centerTitle: true),
+      body: FadeTransition(
+        opacity: _animation,
+        child: GridView.builder(
+          padding: const EdgeInsets.all(20),
+          itemCount: _colors.length,
+          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+            crossAxisCount: 2,
+            mainAxisSpacing: 20,
+            crossAxisSpacing: 20,
+          ),
+          itemBuilder: (context, index) {
+            return ScaleTransition(
+              scale: _animation,
+              child: Container(
+                decoration: BoxDecoration(
+                  color: _colors[index],
+                  borderRadius: BorderRadius.circular(18),
+                  boxShadow: const [
+                    BoxShadow(
+                      color: Colors.black12,
+                      blurRadius: 8,
+                      offset: Offset(0, 4),
+                    ),
+                  ],
+                ),
+                child: const Center(
+                  child: Icon(Icons.image, color: Colors.white, size: 48),
+                ),
+              ),
+            );
+          },
+        ),
+      ),
+    );
+  }
+}
 
 
-// // About Page
-// class AboutPage extends StatelessWidget {
-//   const AboutPage({super.key});
-//   @override
-//   Widget build(BuildContext context) {
-//     return Scaffold(
-//       appBar: AppBar(title: const Text('About'), centerTitle: true),
-//       body: Center(
-//         child: Card(
-//           margin: const EdgeInsets.all(32),
-//           elevation: 6,
-//           shape: RoundedRectangleBorder(
-//             borderRadius: BorderRadius.circular(18),
-//           ),
-//           child: Padding(
-//             padding: const EdgeInsets.all(24.0),
-//             child: Column(
-//               mainAxisSize: MainAxisSize.min,
-//               children: [
-//                 const Icon(
-//                   Icons.info_outline,
-//                   size: 60,
-//                   color: Colors.blueAccent,
-//                 ),
-//                 const SizedBox(height: 16),
-//                 Text(
-//                   """
-//                   This app demonstrates smooth navigation, animations and modern Flutter UI widgets.
-//                 Stay updated, Stay cool❤️.
 
-//                   """,
-//                   style: Theme.of(context).textTheme.bodyLarge,
-//                   textAlign: TextAlign.center,
-//                 ),
-//                 const SizedBox(height: 16),
-//                 const Text(
-//                   'This App is created using Flutter Framework.',
-//                   style: TextStyle(fontWeight: FontWeight.bold),
-//                 ),
-//               ],
-//             ),
-//           ),
-//         ),
-//       ),
-//     );
-//   }
-// }
+
+// About Page
+class AboutPage extends StatelessWidget {
+  const AboutPage({super.key});
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: const Text('About'), centerTitle: true),
+      body: Center(
+        child: Card(
+          margin: const EdgeInsets.all(32),
+          elevation: 6,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(18),
+          ),
+          child: Padding(
+            padding: const EdgeInsets.all(24.0),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                const Icon(
+                  Icons.info_outline,
+                  size: 60,
+                  color: Colors.blueAccent,
+                ),
+                const SizedBox(height: 16),
+                Text(
+                  """
+                  This app demonstrates smooth navigation, animations and modern Flutter UI widgets.
+                Stay updated, Stay cool❤️.
+
+                  """,
+                  style: Theme.of(context).textTheme.bodyLarge,
+                  textAlign: TextAlign.center,
+                ),
+                const SizedBox(height: 16),
+                const Text(
+                  'This App is created using Flutter Framework.',
+                  style: TextStyle(fontWeight: FontWeight.bold),
+                ),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
