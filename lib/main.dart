@@ -342,7 +342,7 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
           alignment: Alignment.center,
           child: Text(
-            'Visually Enhanced Container',
+            'Visually and graphically enhanced Container',
             style: Theme.of(context).textTheme.titleLarge?.copyWith(
               color: Colors.deepPurple,
               fontWeight: FontWeight.w600,
