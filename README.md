@@ -132,4 +132,3 @@ This project currently does not specify a license. If you are the owner, conside
 - [`flutter_staggered_animations`](https://pub.dev/packages/flutter_staggered_animations)
 
 — Happy Fluttering!
-
