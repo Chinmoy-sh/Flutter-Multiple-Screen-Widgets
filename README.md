@@ -19,13 +19,13 @@ A clean, modern showcase of frequently used Flutter widgets with smooth animatio
 - Included pages: Home, Profile, Settings (animated switches), Gallery (animated grid), About
 - Platforms: Android, iOS, Web, Windows, macOS, Linux
 
-## Tech Stack
+## 💻 Tech Stack
 
 - Flutter (stable)
 - Dart ^3.8
 - Packages: `flutter_staggered_animations`
 
-## Quick Start
+## 🚀 Quick Start
 
 Prerequisites:
 
@@ -56,7 +56,7 @@ flutter run -d ios
 flutter run -d chrome
 ```
 
-## Build Releases
+## 🛠️ Build Releases
 
 ```powershell
 # Android
