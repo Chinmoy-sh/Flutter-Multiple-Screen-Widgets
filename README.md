@@ -74,7 +74,7 @@ flutter build linux --release
 flutter build web --release
 ```
 
-## Project Structure
+## 🧱 Project Structure
 
 ```text
 lib/
@@ -91,7 +91,7 @@ Key entry points:
 - `lib/main.dart`: App theme, Splash screen, Home, Profile, Settings, Gallery, About, and custom transitions
 - `pubspec.yaml`: Dependencies, SDK constraints, and platform configuration
 
-## How to Use the App
+## ♻️ How to Use the App
 
 - Start the app, view the splash intro, and land on Home
 - Explore sections: text styles, icons, buttons, advanced UI
@@ -99,7 +99,7 @@ Key entry points:
 - Navigate via AppBar/actions or the Home buttons to Profile, Gallery, and About
 - Open Settings from Profile to try animated switches
 
-## Screenshots
+## 📸 Screenshots
 
 Add your screenshots to `docs/screenshots/` and reference them here:
 
