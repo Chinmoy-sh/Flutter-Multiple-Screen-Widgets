@@ -1,10 +1,10 @@
-# Flutter Multiple Screen Widgets
+# 🤖 Flutter Multiple Screen Widgets
 
 A clean, modern showcase of frequently used Flutter widgets with smooth animations, page transitions, and multi‑platform support. Great as a learning app for beginners and a quick starter for real projects.
 
 > Built with Flutter and Dart, featuring a polished UI, animated lists, and a simple multi‑page navigation flow.
 
-## Features
+## ✨ Features
 
 - Splash screen: Fade/scale intro with timed navigation
 - Animated list: `flutter_staggered_animations` for slide/fade effects
