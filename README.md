@@ -108,13 +108,13 @@ Add your screenshots to `docs/screenshots/` and reference them here:
 ![Gallery](docs/screenshots/gallery.png)
 ```
 
-## Testing
+## 🧪 Testing
 
 ```powershell
 flutter test
 ```
 
-## Contributing
+## 🤝 Contributing
 
 Contributions are welcome! If you’d like to improve the UI, add examples, or fix bugs:
 
@@ -122,11 +122,11 @@ Contributions are welcome! If you’d like to improve the UI, add examples, or f
 - Fork the repo and create a feature branch
 - Submit a PR with a clear description and screenshots (if UI changes)
 
-## License
+## 🎫 License
 
 This project currently does not specify a license. If you are the owner, consider adding a license (e.g., MIT, Apache-2.0) to clarify usage.
 
-## Acknowledgments
+## 📢 Acknowledgments
 
 - Flutter team and community
 - [`flutter_staggered_animations`](https://pub.dev/packages/flutter_staggered_animations)
